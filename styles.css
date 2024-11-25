@@ -1,0 +1,578 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #2e6da4;
+}
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.progreso-chart-container {
+    margin-top: 20px;
+    text-align: center;
+}
+.recomendaciones-container {
+    margin-top: 20px;
+}
+.recomendaciones-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.salud-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.salud-item {
+    text-align: center;
+    width: calc(50% - 10px);
+    padding: 10px;
+    background-color: #e9f7ef;
+    border: 1px solid #c3e6d7;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.salud-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.salud-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.recomendaciones-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+.recomendaciones-container p {
+    color: #721c24;
+    margin: 0;
+}
+
+.recomendaciones-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.recomendaciones-container li {
+    color: #721c24;
+    margin-bottom: 5px;
+}
+
+header {
+    background-color: #388e3c; /* Verde más oscuro */
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: #4caf50; /* Verde más claro */
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #388e3c; /* Verde más oscuro */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #388e3c;
+}
+button {
+    background-color: #4caf50; /* Verde */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #388e3c; /* Verde más oscuro */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 8px;
+    display: block;
+    color: #388e3c; /* Verde oscuro */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: calc(100% - 40px); /* Ajuste para compensar el padding */
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+.hidden {
+    display: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #4caf50;
+    color: white;
+}
+td {
+    background-color: #f9f9f9;
+}
+
+..reloj-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.reloj-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.reloj-info {
+    display: flex;
+    align-items: center;
+}
+
+.reloj-info img {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.reloj-info div {
+    flex-grow: 1;
+}
+
+.reloj-info p {
+    margin: 5px 0;
+}
+
+.reloj-info button {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reloj-info button:hover {
+    background-color: #66bb6a;
+}
+
+#carrito-compras {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.progreso-chart-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+/* Estilos para el carrito de compras */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrito {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.carrito.hidden {
+    display: none;
+}
+
+.carrito p {
+    font-size: 1.2em;
+    color: #888;
+}
+
+.producto {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.producto img {
+    max-width: 100px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    margin: 5px 0;
+}
+
+.producto button {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #66bb6a;
+}
+
+
+/* Estilos específicos para el carrito de compras */
+.carrito-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito-content {
+    background-color: white;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.carrito-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#carrito-compras-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#perfil_img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.carrito-producto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.carrito-producto img {
+    max-width: 80px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.carrito-producto p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.carrito-producto button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrito-producto button:hover {
+    background-color: #d32f2f;
+}
+
+.carrito-footer {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.carrito-footer button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrito-footer button:hover {
+    background-color: #66bb6a;
+}
+
+#modal-carrito {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+}
+
+#modal-carrito.hidden {
+    display: none;
+}
+
+#mensaje-confirmacion {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 128, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#mensaje-confirmacion.mostrar {
+    opacity: 1;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.detalle-producto {
+    display: flex;
+    align-items: center;
+}
+
+.detalle-producto img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.eliminar-producto {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#pagar-button:disabled {
+    background-color: #ccc; /* Cambia el color de fondo */
+    color: #666; /* Cambia el color del texto */
+    cursor: not-allowed; /* Cambia el cursor */
+    opacity: 0.6; /* Ajusta la opacidad para dar un efecto de deshabilitado */
+}
+
+#perfil {
+    margin-top: 40px;
+}
+
+.perfil-info {
+    margin-bottom: 20px;
+}
+
+.perfil-info label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.perfil-info input[type="text"],
+.perfil-info input[type="email"],
+.perfil-info input[type="tel"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#perfil button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#perfil button:hover {
+    background-color: #66bb6a;
+}
+#datos-salud {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.salud-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dato-salud {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    width: calc(30% - 40px); /* Ajustar el ancho según el número de datos por fila */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dato-salud:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dato-salud img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+.dato-salud p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.valor-dato {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4caf50;
+}
