@@ -1,41 +1,108 @@
-<div id="relojes" class="container">
-    <h2>Compra de Relojes</h2>
-    <p>Escoge el reloj que más te guste para ayudarte a mantener una vida saludable.</p>
-
-    <div class="reloj-container">
-        <div class="reloj-info">
-            <img src="https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true" alt="Imagen del Reloj A">
-            <div>
-                <p><strong>Reloj Inteligente A</strong></p>
-                <p>Un elegante reloj con seguimiento avanzado de actividad y salud.</p>
-                <p><strong>Precio: S/80.99</strong></p>
-                <button onclick="agregarAlCarrito('Reloj Inteligente A', 'https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true', 80.99)">Agregar al Carrito</button>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vida Saludable - Relojes</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar a {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">FitLife</a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="relojes.html">Relojes</a>
+                <a class="navbar-item" href="dietas.html">Dietas</a>
+                <a class="navbar-item" href="perfil.html">Perfil</a>
+                <a class="navbar-item" href="salud.html">Salud</a>
+                <a class="navbar-item" href="compra.html">Comprar</a>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="reloj-container">
-        <div class="reloj-info">
-            <img src="https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true" alt="Imagen del Reloj B">
-            <div>
-                <p><strong>Reloj Inteligente B</strong></p>
-                <p>Un diseño moderno con funciones avanzadas para tu bienestar diario.</p>
-                <p><strong>Precio: S/120.99</strong></p>
-                <button onclick="agregarAlCarrito('Reloj Inteligente B', 'https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true', 120.99)">Agregar al Carrito</button>
+    <div id="relojes" class="container">
+        <section class="section">
+            <h2 class="title is-2 has-text-centered">Compra de Relojes</h2>
+            <p class="subtitle is-5 has-text-centered mb-6">Escoge el reloj que más te guste para ayudarte a mantener una vida saludable.</p>
+            
+            <div class="columns is-multiline is-centered">
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true" alt="Imagen del Reloj A">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h3 class="title is-4">Reloj Inteligente A</h3>
+                                <p>Un elegante reloj con seguimiento avanzado de actividad y salud.</p>
+                                <p class="has-text-weight-bold">Precio: S/80.99</p>
+                                <button class="button is-primary mt-3" onclick="agregarAlCarrito('Reloj Inteligente A', 'https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true', 80.99)">
+                                    Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true" alt="Imagen del Reloj B">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h3 class="title is-4">Reloj Inteligente B</h3>
+                                <p>Un diseño moderno con funciones avanzadas para tu bienestar diario.</p>
+                                <p class="has-text-weight-bold">Precio: S/120.99</p>
+                                <button class="button is-primary mt-3" onclick="agregarAlCarrito('Reloj Inteligente B', 'https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true', 120.99)">
+                                    Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true" alt="Imagen del Reloj C">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h3 class="title is-4">Reloj Inteligente C</h3>
+                                <p>Un reloj deportivo con GPS integrado y resistente al agua.</p>
+                                <p class="has-text-weight-bold">Precio: S/100.00</p>
+                                <button class="button is-primary mt-3" onclick="agregarAlCarrito('Reloj Inteligente C', 'https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true', 100.00)">
+                                    Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
-
-    <div class="reloj-container">
-        <div class="reloj-info">
-            <img src="https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true" alt="Imagen del Reloj C">
-            <div>
-                <p><strong>Reloj Inteligente C</strong></p>
-                <p>Un reloj deportivo con GPS integrado y resistente al agua.</p>
-                <p><strong>Precio: S/100.00</strong></p>
-                <button onclick="agregarAlCarrito('Reloj Inteligente C', 'https://coolboxpe.vtexassets.com/arquivos/ids/362265-800-auto?v=638494133776030000&width=800&height=auto&aspect=true', 100.00)">Agregar al Carrito</button>
-            </div>
-        </div>
-    </div>
-
-</div>
+</body>
+</html>

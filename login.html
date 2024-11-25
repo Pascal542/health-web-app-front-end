@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vida Saludable</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f4f8;
+        }
+        .login-card {
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="card">
+            <header class="card-header has-background-primary">
+                <h1 class="card-header-title is-centered has-text-white">
+                    <img src="https://www.pokepedia.fr/images/c/c0/Miniature_0252_RS.gif" height="37" alt="Logo" class="mr-2">
+                    Vida Saludable
+                </h1>
+            </header>
+            <div class="card-content">
+                <form id="login-form">
+                    <div class="field">
+                        <label class="label">Usuario</label>
+                        <div class="control has-icons-left">
+                            <input type="text" id="username" class="input" required placeholder="Ingrese su usuario">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Contraseña</label>
+                        <div class="control has-icons-left">
+                            <input type="password" id="password" class="input" required placeholder="Ingrese su contraseña">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <button type="submit" class="button is-primary is-fullwidth">
+                                Ingresar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <p id="error-message" class="help is-danger mt-3"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -3,47 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida Saludable</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Bienvenido a FitLife</title>
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    >
+    <style>
+        .hero {
+            background-color: #f7f7f7;
+            padding: 50px 0;
+        }
+        .chat-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .chat-box {
+            height: 300px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 20px;
+            overflow-y: scroll;
+        }
+        .chat-input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar a {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Vida Saludable</h1>
-    </header>
-    <div id="login-page" class="container">
-        <h2>Iniciar Sesión</h2>
-        <form id="login-form">
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" required>
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" required>
-            <button type="submit">Ingresar</button>
-        </form>
-        <p id="error-message" style="color: red;"></p>
-    </div>
 
-    <div id="main-content" class="hidden">
-        <nav>
-            <a id="dietas-link" href="#" class="active">Dietas</a>
-            <a id="relojes-link" href="#">Relojes</a>
-            <a id="salud-link" href="#">Salud</a>
-            <a id="carrito-compras-link" href="#" style="float: right;">
-                <img id="carrito-compras-icon" src="https://img.icons8.com/fluent/48/000000/shopping-cart.png" alt="Carrito de Compras">
-            </a>
-            <a id="perfil" href="#" style="text-align: center;">
-                <img id="perfil_img" src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Free-Download.png" alt="Mi perfil">
-            </a>
-        </nav>
-        
-        <div id="view-container"></div>
-        <div id="carrito-productos" class="carrito hidden">
-            <!-- Contenido del carrito se agregará dinámicamente aquí -->
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">FitLife</a>
         </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="relojes.html">Relojes</a>
+                <a class="navbar-item" href="dietas.html">Dietas</a>
+                <a class="navbar-item" href="perfil.html">Perfil</a>
+                <a class="navbar-item" href="salud.html">Salud</a>
+                <a class="navbar-item" href="compra.html">Comprar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Bienvenido a FitLife</h1>
+                <p class="subtitle">Tu asistente personal de bienestar con inteligencia artificial</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="section">
+            <h2 class="title is-4">¿Cómo puedo ayudarte hoy?</h2>
+            <p>Haz clic en los enlaces a continuación para acceder a diferentes secciones de la aplicación:</p>
+            <ul>
+                <li><a href="relojes.html">Ver tus relojes de salud</a></li>
+                <li><a href="dietas.html">Consultar dietas saludables</a></li>
+                <li><a href="perfil.html">Ver tu perfil</a></li>
+                <li><a href="salud.html">Ver tus datos de salud</a></li>
+            </ul>
+        </section>
+
+        <!-- Chat with AI -->
+        <section class="section chat-container">
+            <h2 class="title is-4">Chatea con tu Asistente de IA</h2>
+            <div class="chat-box" id="chat-box">
+                <div class="message">¡Hola! Soy tu asistente personal. ¿En qué puedo ayudarte hoy?</div>
+            </div>
+            <input type="text" id="chat-input" class="chat-input" placeholder="Escribe aquí..." onkeyup="sendMessage(event)">
+        </section>
     </div>
 
-    <div id="mensaje-confirmacion"></div>
+    <script>
+        // Function to simulate sending a message to the AI chat
+        function sendMessage(event) {
+            if (event.key === 'Enter') {
+                const input = document.getElementById('chat-input');
+                const chatBox = document.getElementById('chat-box');
+                const message = input.value;
+                
+                if (message.trim() !== "") {
+                    chatBox.innerHTML += `<div class="message user-message">${message}</div>`;
+                    chatBox.innerHTML += `<div class="message ai-message">Estoy procesando tu solicitud...</div>`;
+                    chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
+                    input.value = ''; // Clear input field
 
-    <script src="scripts.js"></script>
+                    // Simulate AI response
+                    setTimeout(() => {
+                        chatBox.innerHTML += `<div class="message ai-message">Aquí tienes tu respuesta.</div>`;
+                        chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
+                    }, 1000); // Simulated AI delay
+                }
+            }
+        }
+    </script>
+
 </body>
 </html>

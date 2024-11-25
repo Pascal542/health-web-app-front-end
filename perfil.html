@@ -1,22 +1,83 @@
-<div id="perfil" class="container">
-    <h2>Mi Perfil</h2>
-    <div class="perfil-info">
-        <label for="nombre-perfil">Nombre:</label>
-        <input type="text" id="nombre-perfil" value="Juan">
-        <label for="apellido-perfil">Apellido:</label>
-        <input type="text" id="apellido-perfil" value="Pérez">
-        <label for="email-perfil">Email:</label>
-        <input type="email" id="email-perfil" value="juan.perez@example.com">
-        <label for="direccion-perfil">Dirección:</label>
-        <input type="text" id="direccion-perfil" value="Calle Principal 123">
-        <label for="ciudad-perfil">Ciudad:</label>
-        <input type="text" id="ciudad-perfil" value="Ciudad Capital">
-        <label for="provincia-perfil">Provincia:</label>
-        <input type="text" id="provincia-perfil" value="Provincia X">
-        <label for="zip-perfil">Código Postal:</label>
-        <input type="text" id="zip-perfil" value="12345">
-        <label for="telefono-perfil">Teléfono:</label>
-        <input type="tel" id="telefono-perfil" value="555-123456">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vida Saludable</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar a {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">FitLife</a>
     </div>
-    <button onclick="actualizarPerfil()">Actualizar Perfil</button>
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="relojes.html">Relojes</a>
+            <a class="navbar-item" href="dietas.html">Dietas</a>
+            <a class="navbar-item" href="perfil.html">Perfil</a>
+            <a class="navbar-item" href="salud.html">Salud</a>
+            <a class="navbar-item" href="compra.html">Comprar</a>
+        </div>
+    </div>
+</nav>
+
+<div id="perfil" class="container mt-5">
+    <h2 class="title is-3 has-text-centered">Mi Perfil</h2>
+    <div class="box">
+        <div class="columns is-multiline">
+            <div class="column is-half">
+                <label for="nombre-perfil" class="label">Nombre</label>
+                <input type="text" id="nombre-perfil" class="input" value="Juan">
+            </div>
+            <div class="column is-half">
+                <label for="apellido-perfil" class="label">Apellido</label>
+                <input type="text" id="apellido-perfil" class="input" value="Pérez">
+            </div>
+            <div class="column is-half">
+                <label for="email-perfil" class="label">Email</label>
+                <input type="email" id="email-perfil" class="input" value="juan.perez@example.com">
+            </div>
+            <div class="column is-half">
+                <label for="direccion-perfil" class="label">Dirección</label>
+                <input type="text" id="direccion-perfil" class="input" value="Calle Principal 123">
+            </div>
+            <div class="column is-half">
+                <label for="ciudad-perfil" class="label">Ciudad</label>
+                <input type="text" id="ciudad-perfil" class="input" value="Ciudad Capital">
+            </div>
+            <div class="column is-half">
+                <label for="provincia-perfil" class="label">Provincia</label>
+                <input type="text" id="provincia-perfil" class="input" value="Provincia X">
+            </div>
+            <div class="column is-half">
+                <label for="zip-perfil" class="label">Código Postal</label>
+                <input type="text" id="zip-perfil" class="input" value="12345">
+            </div>
+            <div class="column is-half">
+                <label for="telefono-perfil" class="label">Teléfono</label>
+                <input type="tel" id="telefono-perfil" class="input" value="555-123456">
+            </div>
+        </div>
+        <div class="has-text-centered mt-4">
+            <button class="button is-primary" onclick="actualizarPerfil()">Actualizar Perfil</button>
+        </div>
+    </div>
 </div>
+</body>
+</html>
