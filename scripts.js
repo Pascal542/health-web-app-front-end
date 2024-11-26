@@ -35,9 +35,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     const enteredUsername = document.getElementById('username').value;
     const enteredPassword = document.getElementById('password').value;
     if (enteredUsername === username && enteredPassword === password) {
-        document.getElementById('login-page').classList.add('hidden');
-        document.getElementById('main-content').classList.remove('hidden');
-        mostrarVista('dietas');
+        window.location.href = 'index.html';
     } else {
         document.getElementById('error-message').textContent = "Usuario o contraseña incorrectos.";
     }
